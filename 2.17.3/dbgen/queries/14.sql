@@ -5,7 +5,7 @@
 :x
 :o
 select
-	100.00 * sum(case
+	CAST(100.00 as BIGINT) * sum(case
 		when p_type like 'PROMO%'
 			then l_extendedprice * (1 - l_discount)
 		else 0

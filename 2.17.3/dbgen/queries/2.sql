@@ -31,6 +31,7 @@ where
 		select
 			min(ps_supplycost)
 		from
+			part,
 			partsupp,
 			supplier,
 			nation,

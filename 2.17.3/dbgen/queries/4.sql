@@ -16,6 +16,7 @@ where
 		select
 			*
 		from
+			orders,
 			lineitem
 		where
 			l_orderkey = o_orderkey

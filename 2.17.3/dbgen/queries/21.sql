@@ -21,6 +21,7 @@ where
 		select
 			*
 		from
+			lineitem l1,
 			lineitem l2
 		where
 			l2.l_orderkey = l1.l_orderkey
@@ -30,6 +31,7 @@ where
 		select
 			*
 		from
+			lineitem l1,
 			lineitem l3
 		where
 			l3.l_orderkey = l1.l_orderkey

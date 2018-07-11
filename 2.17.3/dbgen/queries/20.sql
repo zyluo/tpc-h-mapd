@@ -29,6 +29,7 @@ where
 				select
 					0.5 * sum(l_quantity)
 				from
+					partsupp,
 					lineitem
 				where
 					l_partkey = ps_partkey

@@ -17,6 +17,7 @@ where
 		select
 			0.2 * avg(l_quantity)
 		from
+			part,
 			lineitem
 		where
 			l_partkey = p_partkey
